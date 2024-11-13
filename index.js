@@ -5,10 +5,6 @@ app.use(express.json());
 
 // Add CORS middleware
 app.use((req, res, next) => {
-  res.setHeader(
-    "Access-Control-Allow-Origin",
-    "TODO - UPDATE THIS: https://d3ecocrh7z4pdj.amplifyapp.com"
-  );
   res.setHeader("Access-Control-Allow-Methods", "GET");
   next();
 });
